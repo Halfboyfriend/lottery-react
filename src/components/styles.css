@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo-element behind the content */
+    background-image: url(images/lottery.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px); /* Adjust the blur amount as needed */
+  }
+body{
+   background-color: #e1e1e1;
+  color: #fff;
+}
+
+h1{
+    color: orange;
+ 
+}
+#conn__btn{
+    float: right;
+    margin-top: -20px;
+    color: #fff;
+    background-color: orange;
+    padding: 5px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#landind__page{
+    text-align: center;
+    margin-top: 50px;
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+#landind__page h2{
+    margin-top: 20px;
+    color: #a82424;
+    margin-bottom: 20px;
+
+}
+
+#landind__page p{
+    text-align: start;
+    color: #fff;
+    margin-bottom: 5px;
+   
+}
+#content {
+    margin-top: 20px;
+    color: #fff;
+}
+#content p{
+    font-size: 20px;
+}
+
+#message {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    background-color: purple;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 25px;
+    margin: 15px 0px;
+}
+#enter{
+   
+    color: #fff;
+    background-color: rgb(12, 217, 12);
+    padding: 5px 20px;
+    font-size: 15px;
+    border: 1px solid rgb(12, 217, 12);
+   border-radius: 10px;
+   margin-top: 10px;
+
+}
+
+input{
+    margin-left: 10px;
+    padding: 2px;
+    width: 200px;
+}
+
+h3{
+    margin-top: 20px;
+}
+span{
+    font-weight: 900;
+    color: red;
+}
+@media (max-width: 650px) {
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 655px) {
+    body{
+        margin: 0 200px;
+        
+    }
+    #landind__page p{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #content, #manager__page, form{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+}
+
